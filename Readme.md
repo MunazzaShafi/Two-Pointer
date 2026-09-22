@@ -12,6 +12,10 @@
 
  6. [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/submissions/2145896138/)
 
+ 7. [Rotate Array](https://leetcode.com/problems/rotate-array/submissions/2149888956/)
+
+ 8. [3Sum](https://leetcode.com/problems/3sum/submissions/2150048792/)
+
 
 
                             Two Pointer
