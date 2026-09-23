@@ -16,6 +16,10 @@
 
  8. [3Sum](https://leetcode.com/problems/3sum/submissions/2150048792/)
 
+ 9. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/submissions/2151046442/s)
+
+ 10. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/submissions/2151076052/)
+
 
 
                             Two Pointer
