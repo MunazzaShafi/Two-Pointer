@@ -1,41 +1,46 @@
- Link of Leetcode problem Solution:-
- 
- 1. [Two Sum](https://leetcode.com/problems/two-sum/submissions/2137119521/)
+Link of Leetcode problem Solution:-
 
- 2. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2137160045/)
+1.  [Two Sum](https://leetcode.com/problems/two-sum/submissions/2137119521/)
 
- 3. [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/submissions/2144413733/)
+2.  [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2137160045/)
 
- 4. [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/submissions/2145860615/)
+3.  [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/submissions/2144413733/)
 
- 5. [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/submissions/2145875156/)
+4.  [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/submissions/2145860615/)
 
- 6. [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/submissions/2145896138/)
+5.  [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/submissions/2145875156/)
 
- 7. [Rotate Array](https://leetcode.com/problems/rotate-array/submissions/2149888956/)
+6.  [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/submissions/2145896138/)
 
- 8. [3Sum](https://leetcode.com/problems/3sum/submissions/2150048792/)
+7.  [Rotate Array](https://leetcode.com/problems/rotate-array/submissions/2149888956/)
 
- 9. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/submissions/2151046442/s)
+8.  [3Sum](https://leetcode.com/problems/3sum/submissions/2150048792/)
 
- 10. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/submissions/2151076052/)
+9.  [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/submissions/2151046442/s)
 
+10. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/submissions/2151076052/)
 
+11. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/submissions/2152913651/)
 
-                            Two Pointer
+12. [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/submissions/2152908435/)
+
+13. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/submissions/2152928356/)
+
+14. [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/submissions/2152941512/)
+
+                           Two Pointer
 
 In DSA (Data Structures and Algorithms), a pointer is a variable that stores the memory address of another variable or object.HashMap works well with an unsorted array while Two Pointers usually works best with a sorted array.A HashMap is used when you want to quickly find information using a key while a pointer is used to store the address/location of data in memory.
 
 For example, in C++:
 int x = 10;
-int* ptr = &x;
+int\* ptr = &x;
 
 Here:
 x stores the value 10.
 &x means “the memory address of x.”
 ptr stores that address.
-*ptr means “the value stored at the address inside ptr.”
-
+\*ptr means “the value stored at the address inside ptr.”
 
 What is Two Pointers?
 
@@ -67,44 +72,44 @@ let left = 0;
 let right = nums.length - 1;
 
 while (left < right) {
-    // check condition
+// check condition
 
     left++;
     right--;
+
 }
 
 The important part is not the template itself, but understanding when and why each pointer should move.
 
 Main Two Pointer Patterns
+
 1. Opposite Direction
 
 One pointer starts from the beginning and the other from the end.
 
-left →        ← right
-[ 1  2  3  4  5 ]
+left → ← right
+[ 1 2 3 4 5 ]
 
 Used for:
 
 Palindromes
 Pair problems
 Reversing
-Partitioning
-2. Same Direction
+Partitioning 2. Same Direction
 
 Both pointers move from left to right, but they may move at different speeds.
 
 let left = 0;
 
 for (let right = 0; right < nums.length; right++) {
-    // process nums[right]
+// process nums[right]
 }
 
 Used for:
 
 Removing duplicates
 Moving elements
-Compacting arrays
-3. Two Arrays
+Compacting arrays 3. Two Arrays
 
 One pointer is used for each array.
 
@@ -112,7 +117,7 @@ let i = 0;
 let j = 0;
 
 while (i < nums1.length && j < nums2.length) {
-    // compare nums1[i] and nums2[j]
+// compare nums1[i] and nums2[j]
 }
 
 Used for:
@@ -127,8 +132,8 @@ Sorting gives us useful information about the elements around the pointers.
 For example:
 
 [1, 2, 3, 4, 6]
- ↑           ↑
-left        right
+↑ ↑
+left right
 
 If we are looking for a target sum:
 
@@ -145,8 +150,8 @@ Two Pointers can also separate elements based on a condition.
 Example:
 
 [3, 1, 2, 4]
- ↑        ↑
-left     right
+↑ ↑
+left right
 
 If left contains an odd number and right contains an even number, swap them:
 
@@ -162,7 +167,7 @@ The most important part of Two Pointers is deciding which pointer moves and why.
 For example:
 
 if (nums[left] % 2 === 0) {
-    left++;
+left++;
 }
 
 The left element is already correct, so we move left.
